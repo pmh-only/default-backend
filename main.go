@@ -20,10 +20,10 @@ func main() {
 		})
 	})
 
-	app.All("/*", func(c *fiber.Ctx) error {
-		statusCode, err := strconv.ParseInt(c.Get("X-Code", "400"), 10, 64)
+	app.Get("/", func(c *fiber.Ctx) error {
+		statusCode, err := strconv.ParseInt(c.Get("X-Code", "404"), 10, 64)
 		if err != nil {
-			statusCode = 400
+			statusCode = 404
 		}
 
 		return c.Status(int(statusCode)).JSON(fiber.Map{
