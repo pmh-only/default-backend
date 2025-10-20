@@ -18,6 +18,8 @@ why?
 uhh okay. then just run `ghcr.io/pmh-only/default:latest` image. \
 and follow ingress [nginx controller's official document](https://kubernetes.github.io/ingress-nginx/examples/customization/custom-errors/#ingress-controller-configuration)
 
+oh. i almost forgot to tell you. server is listening on `3000` port.
+
 ## huh, so this thing just exist for displaying fancier 404 page than nginx's default one
 yes. bingo.
 
