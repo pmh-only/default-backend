@@ -18,7 +18,7 @@
     <meta content="https://pmh.codes" property="og:url" />
     <meta content="https://pmh.codes/favicon.svg" property="og:image" />
     <meta content="website" property="og:type" />
-    <meta content="Status {{status}}" property="og:site_name" />
+    <meta content="{{host}} #{{status}}" property="og:site_name" />
     <meta content="512" property="og:image:width" />
     <meta content="512" property="og:image:height" />
 
@@ -40,7 +40,7 @@
     <main class="max-w-xl w-full p-10">
       <div class="mockup-browser border-base-300 border w-full shadow-xl hover:shadow-lg transition mb-2">
         <div class="mockup-browser-toolbar">
-          <div class="input">{{url}}</div>
+          <div class="input">{{host}}</div>
         </div>
         <div class="p-6 border-t border-base-300 min-h-60 flex flex-col gap-6 justify-between h-full items-start break-all">
           {{embed}}
