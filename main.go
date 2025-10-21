@@ -37,14 +37,15 @@ func main() {
 
 		themeView := getThemeViewFile(themeDir, statusCode)
 		return c.Render(themeView, fiber.Map{
-			"status":    statusCode,
-			"headers":   c.GetReqHeaders(),
-			"requestId": c.Get("X-Request-Id", "np"),
-			"namespace": c.Get("X-Namespace", "n"),
-			"ingress":   c.Get("X-Ingress-Name", "i"),
-			"service":   c.Get("X-Service-Name", "s"),
-			"port":      c.Get("X-Service-Port", "p"),
-			"url":       c.Get("X-Original-URI", c.Get("Host", "localhost")),
+			"status":     statusCode,
+			"headers":    c.GetReqHeaders(),
+			"requestId":  c.Get("X-Request-Id", "np"),
+			"namespace":  c.Get("X-Namespace", "n"),
+			"ingress":    c.Get("X-Ingress-Name", "i"),
+			"service":    c.Get("X-Service-Name", "s"),
+			"port":       c.Get("X-Service-Port", "p"),
+			"url":        c.Get("X-Original-URI", c.Get("Host", "localhost")),
+			"builtStyle": fileRead(path.Join(themeDir, "assets", "style.build.css")),
 		})
 	})
 
