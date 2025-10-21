@@ -1,0 +1,13 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+  margin: 0;
+}

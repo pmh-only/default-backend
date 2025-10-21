@@ -9,5 +9,6 @@ USER $user:$group
 WORKDIR /app
 
 COPY --chown=$user:$group default-${TARGETARCH} /app/default
+COPY --chown=$user:$group ./skins /app/skins
 
 ENTRYPOINT ["/app/default"]
