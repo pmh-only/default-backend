@@ -12,11 +12,11 @@ you need to bypass HSTS preload, since my certificate doesn't cover that url.\
 
 or use less goofy url: https://doesntexist.mc.pmh.codes
 
-## no, that's not i mean. i wanna run it
+## no, that's not what i mean. i wanna run it
 why?
 
 uhh okay. then just run `ghcr.io/pmh-only/default:latest` image. \
-and follow ingress [nginx controller's official document](https://kubernetes.github.io/ingress-nginx/examples/customization/custom-errors/#ingress-controller-configuration)
+and follow [ingress nginx controller's official document](https://kubernetes.github.io/ingress-nginx/examples/customization/custom-errors/#ingress-controller-configuration)
 
 oh. i almost forgot to tell you. server is listening on `3000` port.
 
