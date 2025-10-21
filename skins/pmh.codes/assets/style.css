@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "../../../build/daisyui.mjs" {
+  themes: retro --default;
+};
+
+@source "../*.hbs";
+@source "../layouts/default.hbs";

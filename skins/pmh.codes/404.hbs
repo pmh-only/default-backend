@@ -1,0 +1,17 @@
+<div>
+  <h1 class="font-bold text-lg">Oops. Wrong domain!</h1>
+  <p>This server doesn't seem to serve the <code class="bg-base-200 px-1 rounded">{{url}}</code>, please double check your typos.</p>
+</div>
+
+<div>
+  <a href="https://pmh.codes" class="btn btn-base">
+    Press <kbd class="kbd kbd-sm">F</kbd> to pay respects.
+  </a>
+</div>
+
+<script>
+  window.onkeydown = (ev) => {
+    if (ev.key === 'f')
+      window.location.href = 'https://pmh.codes'
+  }
+</script>

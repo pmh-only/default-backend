@@ -1,0 +1,26 @@
+<div>
+  <h1 class="font-bold text-lg">Oops. Service unavailable!</h1>
+  <p>The server encountered some problems while loading <code class="bg-base-200 px-1 rounded">{{url}}</code> domain, please come back later.</p>
+</div>
+
+<div>
+  <span id="s" class="loading loading-spinner loading-xl"></span>
+  <button id="r" class="btn btn-base hidden">
+    Press <kbd class="kbd kbd-sm">F</kbd> to pay respects (reload).
+  </button>
+</div>
+
+<script>
+  setTimeout(() => {
+    r.classList.remove('hidden')
+    s.classList.add('hidden')
+
+    r.onclick = () =>
+      window.location.reload()
+
+    window.onkeydown = (ev) => {
+      if (ev.key === 'f')
+        window.location.reload()
+    }
+  }, 1000)
+</script>
