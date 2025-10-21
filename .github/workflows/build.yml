@@ -29,7 +29,7 @@ jobs:
       - run: |
           mkdir build
           curl -sLo build/tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64
-          curl -sLO build/daisyui.mjs https://github.com/saadeghi/daisyui/releases/latest/download/daisyui.mjs
+          curl -sLo build/daisyui.mjs https://github.com/saadeghi/daisyui/releases/latest/download/daisyui.mjs
 
           chmod +x ./build/tailwindcss
           ./build/tailwindcss -i skins/pmh.codes/assets/style.css -o skins/pmh.codes/assets/style.build.css
